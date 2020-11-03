@@ -50,7 +50,14 @@
 (9) 在构造方法中将ID=++idCounter这就实现了每创建一个对象，其编号自动加一。调用两个方法为setInquire(MonthSalary)和setTuitionFee(TuitionFee)方法 。  
 (10) 创建默认的无参的构造方法，同样用super调用父类的构造对象。两个构造方法一个可以在初始化时实例化对象，一个可以后续实例化。定义calculate方法用于计算年收入减去学费。  
 (11) 定义isMark方法用于判断年收入是否大于零。重写toString方法，使其打印时返回该对象的基本信息。  
-(12) 创建交税额度计算类CalculationIncomeTax类，在其中定义一个方法为C，此方法接受一个参数是DoctoralCandidate
+(12) 创建交税额度计算类CalculationIncomeTax类，在其中定义一个方法为C，此方法接受一个参数是DoctoralCandidate类的参数ssr。用if来判断ssr对象的月收入是否小于5000，小于5000则不交税直接将ssr对象的计算总金额赋值给ssr对象的IndividualIncomeTax变量。
+(13) 用if来判断他的年收入符合那个阶段，然后在将参数i赋值为对应的数，再用switch和公式来按符合的阶段进行计算，赋值给setPayTaxMoney，然后再将ssr对象的calculate减去ssr对象的PayTaxMoney，赋值给IndividualIncome，这就实现了发放工资。
+(14) 创建自定义异常处理Determine_the_inputException类继承Exception类，在类中定义一个字符串message，创建一个方法，当出现Determine_the_inputException异常时，则可以调用这个方法。
+(15) 创建测试类Test_2类，首先导入三个包import java.util.InputMismatchException、java.util.HashSet和java.util.Scanner。
+(16) 创建字符串型q用于接收name和sex参数，创建Scanner对象in，创建字符串型数组a，创建int型数组s。
+(17) 创建DoctoralCandidate类的HashSet，命名为names。再创建一个字符串型HashSet，命名为name_1。
+(18) 用DoctoralCandidate()构造方法创造两个对象为dc_1和dc_2对象。定义DoctoralCandidate数字存放对象dc_1和dc_2。
+(19) 在for循环中创建while死循环
 
 
 # 六、核心代码
